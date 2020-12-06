@@ -55,13 +55,17 @@ namespace _7_Condicionais
                     limpa();
 
                     Console.WriteLine("--------------ERRO 500--------------");
-
-                    Console.WriteLine("\n*Não foi possível processar sua solicitação, devido ao seguinte erro: \n\n{0}\n", e.Message);
+                    Console.WriteLine("\n* Não foi possível processar sua solicitação, devido ao seguinte erro: \n\n{0}\n", e.Message);
 
                     espera();
+
                     Console.WriteLine("--------------ERRO 500--------------");
+                    Console.WriteLine("\n* O erro se apresenta da seguinte forma: \n\n{0}\n", e);
+
                     espera();
-                    Console.WriteLine("\n*O erro se apresenta da seguinte forma: \n\n{0}\n", e);
+
+                    Console.WriteLine("--------------ERRO 500--------------");
+                    Console.WriteLine("\n* O tipo de exceção que ocorre foi: {0}", e.GetType());
 
                     espera();
 
