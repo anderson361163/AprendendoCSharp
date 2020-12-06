@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.2-CFBCursosMacoratti", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-Condicionais", "7-Condicionais\7-Condicionais.csproj", "{30BB337A-6FE3-4C01-AC64-A81379AA693F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8-CondicionaisParte2", "8-CondicionaisParte2\8-CondicionaisParte2.csproj", "{859DFAE8-F6C0-4CEC-8334-A00646C5FC7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{30BB337A-6FE3-4C01-AC64-A81379AA693F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30BB337A-6FE3-4C01-AC64-A81379AA693F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30BB337A-6FE3-4C01-AC64-A81379AA693F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{859DFAE8-F6C0-4CEC-8334-A00646C5FC7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{859DFAE8-F6C0-4CEC-8334-A00646C5FC7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859DFAE8-F6C0-4CEC-8334-A00646C5FC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{859DFAE8-F6C0-4CEC-8334-A00646C5FC7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

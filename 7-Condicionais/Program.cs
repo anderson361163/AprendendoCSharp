@@ -30,7 +30,8 @@ namespace _7_Condicionais
             bool acompanhado = false;
             bool idadeValida = false;
 
-            while (idadeValida == false) {
+            while (idadeValida == false)
+            {
                 try
                 {
                     dividirConteudo();
@@ -47,10 +48,11 @@ namespace _7_Condicionais
 
                     acompString = Console.ReadLine();
                     acompanhado = bool.Parse(acompString);
-                    
+
                     idadeValida = true;
                 }
-                catch(FormatException e) {
+                catch (FormatException e)
+                {
 
                     limpa();
 
@@ -81,18 +83,15 @@ namespace _7_Condicionais
                 }
             }
 
-            if (idade > 0)
+            if (idade >= 18 || acomp == false)
             {
-                if (idade >= 18 || acomp == false)
-                {
-                    dividirConteudo();
-                    Console.WriteLine("\n{0} pode entrar por atender um dos requisitos de maioridade OU minoridade com acompanhamente.", nome, idade);
-                }
-                else
-                {
-                    dividirConteudo();
-                    Console.WriteLine("\n{0} não possui idade igual ou superior a 18 anos. Não pode entrar!", nome);
-                }
+                dividirConteudo();
+                Console.WriteLine("\n{0} pode entrar por atender um dos requisitos de maioridade OU minoridade com acompanhamente.", nome, idade);
+            }
+            else
+            {
+                dividirConteudo();
+                Console.WriteLine("\n{0} não possui idade igual ou superior a 18 anos. Não pode entrar!", nome);
             }
 
             dividirConteudo();
