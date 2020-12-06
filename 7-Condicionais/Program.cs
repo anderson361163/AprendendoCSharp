@@ -8,22 +8,46 @@ namespace _7_Condicionais
 {
     class Program
     {
-
+        public static string nome = "";
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Executando o projeto 7 - Condicionais");
+            dividirConteudo();
+            Console.WriteLine("Executando o projeto 7 - Condicionais\n");
 
             System.Threading.Thread.Sleep(700);
 
+            Console.WriteLine("\nInsira o nome do usuário: ");
+
+            nome = Console.ReadLine();
+            var variavel = "";
+            var acompString = "";
+
             int idade = 0;
+            int idadeInt = 0;
+
+            bool acomp = false;
+            bool acompanhado = false;
             bool idadeValida = false;
 
             while (idadeValida == false) {
                 try
                 {
+                    dividirConteudo();
+                    Console.WriteLine("Digite a idade do(a) usuário(a) {0}:", nome);
 
-                    idade = idadeJoao();
+                    espera();
+
+                    variavel = Console.ReadLine();
+                    idadeInt = Int32.Parse(variavel);
+                    dividirConteudo();
+                    Console.WriteLine("{0} está acompanhado(a)? (Digite: True / False)", nome);
+
+                    espera();
+
+                    acompString = Console.ReadLine();
+                    acompanhado = bool.Parse(acompString);
+                    
                     idadeValida = true;
                 }
                 catch(FormatException e) {
@@ -31,7 +55,7 @@ namespace _7_Condicionais
                     limpa();
 
                     Console.WriteLine("--------------ERRO 500--------------");
-                    espera();
+
                     Console.WriteLine("\n*Não foi possível processar sua solicitação, devido ao seguinte erro: \n\n{0}\n", e.Message);
 
                     espera();
@@ -42,7 +66,7 @@ namespace _7_Condicionais
                     espera();
 
                     Console.WriteLine("--------------ERRO 500--------------");
-                    Console.WriteLine("\nCaractere inválido, por favor insira um número entre 1-120 para prosseguir");
+                    Console.WriteLine("\nPor favor tente novamente, inserindo um número entre 1 e 120 para prosseguir na idade do usuário.");
                     limpaEEspera();
                 }
                 catch
@@ -53,29 +77,24 @@ namespace _7_Condicionais
                 }
             }
 
-            if (idade != 0)
+            if (idade > 0)
             {
-                Console.WriteLine("\nA idade de João é {0}", idade);
+                if (idade >= 18 || acomp == false)
+                {
+                    dividirConteudo();
+                    Console.WriteLine("\n{0} pode entrar por atender um dos requisitos de maioridade OU minoridade com acompanhamente.", nome, idade);
+                }
+                else
+                {
+                    dividirConteudo();
+                    Console.WriteLine("\n{0} não possui idade igual ou superior a 18 anos. Não pode entrar!", nome);
+                }
             }
 
-            Console.WriteLine("Pressione enter para finalizar o programa . . .");
+            dividirConteudo();
+            Console.WriteLine("\nPressione enter para finalizar o programa . . .");
             Console.ReadLine();
 
-        }
-
-        public static int idadeJoao()
-        {
-            var idade = "";
-            int idadeInt = 0;
-            Console.WriteLine("Digite a idade do João:");
-            System.Threading.Thread.Sleep(100);
-
-            idade = Console.ReadLine();
-
-            idadeInt = Int32.Parse(idade);
-
-
-            return idadeInt;
         }
 
         public static void limpa()
@@ -87,6 +106,11 @@ namespace _7_Condicionais
         {
             System.Threading.Thread.Sleep(4000);
             Console.Clear();
+        }
+
+        public static void dividirConteudo()
+        {
+            Console.WriteLine("----------------");
         }
 
         public static void espera()
