@@ -11,7 +11,7 @@ namespace _0._3Transformando_whileEmFor
         static void Main(string[] args)
         {
             int contador = 1;
-            while (contador <= 10)
+            for (int contador = 1;  contador <= 10)
             {
                 Console.WriteLine(contador);
                 contador++;
