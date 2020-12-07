@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-CaracteresETextos", "5-Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-AtribuindoVariaveis", "6-AtribuindoVariaveis\6-AtribuindoVariaveis.csproj", "{44C152CE-4D19-47FC-81E8-7DEC022A8C9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.1CFBCursosMacoratti", "CFBCursosMacoratti\0.1CFBCursosMacoratti.csproj", "{86E40518-3196-4C8F-8911-C799310B69A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.1.1CFBCursosMacoratti", "CFBCursosMacoratti\0.1.1CFBCursosMacoratti.csproj", "{86E40518-3196-4C8F-8911-C799310B69A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.2-CFBCursosMacoratti", "0.2-CFBCursosMacoratti\0.2-CFBCursosMacoratti.csproj", "{4DCBB29C-87C1-4382-9B22-4D7A40226EC3}"
 EndProject
@@ -25,13 +25,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8-CondicionaisParte2", "8-C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9-CondicionaisParte3", "9-CondicionaisParte3\9-CondicionaisParte3.csproj", "{63DDD0E5-E80E-4A6E-85A7-83C97A7B9A9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.1Exercicio_Alura_Imposto_renda2020", "Exercicio_Alura_Imposto_renda2020\0.1Exercicio_Alura_Imposto_renda2020.csproj", "{615C8215-EB58-40EB-AB8A-E4ECECAE10E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.1.1Exercicio_Alura_Imposto_renda2020", "Exercicio_Alura_Imposto_renda2020\0.1.1Exercicio_Alura_Imposto_renda2020.csproj", "{615C8215-EB58-40EB-AB8A-E4ECECAE10E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.2Exercicio_MesAno", "0.2Exercicio_MesAno\0.2Exercicio_MesAno.csproj", "{3CC1DA8B-1841-4107-A71F-6E56413CB297}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-CalculaPoupanca", "P10-CalculaPoupanca\P10-CalculaPoupanca.csproj", "{6D8FF136-84BC-487E-B5C8-481F5581AEFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11-CalculaInvestimentoALongoPrazo", "P12-CalculaInvestimentoALongoPrazo\P11-CalculaInvestimentoALongoPrazo.csproj", "{9D73BE2E-2F3F-4629-A5F5-99DBB6556720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.3Transformando_whileEmFor", "0.3Transformando_whileEmFor\0.3Transformando_whileEmFor.csproj", "{89B710E5-2222-4C7D-8BDC-DA1984949666}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{9D73BE2E-2F3F-4629-A5F5-99DBB6556720}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D73BE2E-2F3F-4629-A5F5-99DBB6556720}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D73BE2E-2F3F-4629-A5F5-99DBB6556720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89B710E5-2222-4C7D-8BDC-DA1984949666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89B710E5-2222-4C7D-8BDC-DA1984949666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89B710E5-2222-4C7D-8BDC-DA1984949666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89B710E5-2222-4C7D-8BDC-DA1984949666}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
