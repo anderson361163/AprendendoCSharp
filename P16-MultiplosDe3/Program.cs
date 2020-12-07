@@ -11,7 +11,7 @@ namespace P16_MultiplosDe3
         static void Main(string[] args)
         {
             Console.WriteLine("Multiplos de 3!\n");
-            for (int i = 3; i<100; i=i+3)
+            for (int i = 3; i<100; i+=3)
             {
                     Console.WriteLine(i);
             }
